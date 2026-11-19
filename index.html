@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fffaf3" />
+  <meta name="description" content="ZooArea — ყველაფერი თქვენი შინაური ცხოველებისთვის. იპოვეთ ფილიალი და შეუკვეთეთ Wolt-ის ან Glovo-ს მეშვეობით." />
+  <title>ZooArea • ზოოარეა — ახალი ვებსაიტი მზადდება</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Georgian:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Prioritize above-the-fold images. Other photos load only when visible. -->
+  <link rel="preload" href="assets/categories/dog-premium.webp" as="image" type="image/webp" fetchpriority="high" />
+  <link rel="preload" href="assets/brand/logo-transparent.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/branch-photos.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <div class="preloader" id="preloader" role="status" aria-label="ZooArea იტვირთება">
+    <div class="preloader-card"><img src="assets/brand/logo-transparent.webp" width="75" height="75" alt="" /><strong>zoo<span>area</span></strong><small data-i18n="loading">ბედნიერი თათები უკვე მოდიან...</small><div class="loading-track"><div class="loading-progress"></div></div></div>
+  </div>
+  <div class="page-shell" id="home">
+    <!-- Header: old layout, genuine brand logo and preserved KA/EN/RU switcher. -->
+    <header class="header">
+      <a class="brand" href="#home" aria-label="ZooArea — მთავარი">
+        <img class="brand-image" src="assets/brand/logo-transparent.webp" alt="ZooArea ლოგო" width="59" height="59" decoding="async" fetchpriority="high" />
+        <span class="brand-name"><strong>zoo<span>area</span></strong><small>PET CARE & MORE</small></span>
+      </a>
+      <p class="header-caption" data-i18n="headerCaption">ყველაფერი ბედნიერი თათებისთვის</p>
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+995591905050" aria-label="დაგვირეკეთ ნომერზე 591 90 50 50"><img src="assets/icons/phone.svg" alt="" class="ui-icon" /> <span>591 90 50 50</span></a>
+        <div class="language" role="group" aria-label="Language">
+          <button type="button" data-lang="ka" class="active" aria-pressed="true">ქარ</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Announcement is now a dedicated prominent block, not a subtle header pill. -->
+    <div class="announcement" role="status">
+      <span class="announcement-icon" aria-hidden="true">✦</span>
+      <strong data-i18n="announcement">ჩვენი ახალი ვებსაიტი მზადდება!</strong>
+      <span class="announcement-detail" data-i18n="announcementDetail">სულ მალე აქ ონლაინ შოპინგიც დაგხვდებათ</span>
+      <span class="announcement-paw" aria-hidden="true">🐾</span>
+    </div>
+
+    <main class="main" id="mainContent">
+      <!-- Preserves the original old site's left hero / right branches composition. -->
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-symbol">✳</span><span data-i18n="eyebrow">სიყვარულით თქვენს მეგობრებზე</span></div>
+          <h1 id="heroTitle" data-i18n-html="heroTitle">პატარა თათებს <em>დიდი სიყვარული</em> სჭირდება.</h1>
+          <p class="lead" data-i18n="heroDescription">ჩვენთან იპოვით საკვებს, სათამაშოებსა და ყველაფერს თქვენი ოთხფეხა მეგობრისთვის. შეუკვეთეთ ახლავე ან გვესტუმრეთ ფილიალში.</p>
+          <div class="delivery">
+            <a class="cta cta-wolt" id="woltHero" href="https://wolt.com/ka/geo/tbilisi/brand/zooarea" target="_blank" rel="noopener noreferrer">
+              <img class="wolt-logo" src="assets/icons/wolt.svg" alt="Wolt" loading="lazy" />
+              <span data-i18n="woltOrder">შეკვეთა Wolt-ზე</span><span aria-hidden="true">↗</span>
+            </a>
+            <a class="cta cta-glovo" id="glovoHero" href="https://glovoapp.com/ka/ge/tbilisi/stores/zooarea-tbi" target="_blank" rel="noopener noreferrer">
+              <img class="glovo-logo" src="assets/icons/glovo.svg" alt="Glovo" loading="lazy" />
+              <span data-i18n="glovoOrder">შეკვეთა Glovo-ზე</span><span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="hero-note"><span aria-hidden="true">♥</span><span data-i18n="heroNote">ძაღლებისთვის, კატებისთვის და ყველა პატარა მეგობრისთვის</span></div>
+        </div>
+        <div class="hero-art" aria-label="ძაღლისა და კატის ფოტოები">
+          <div class="hero-orb"></div>
+          <img class="hero-dog" src="assets/categories/dog-premium.webp" alt="ძაღლი" loading="eager" decoding="async" fetchpriority="high" width="390" height="390" />
+          <img class="hero-cat" src="assets/categories/cat-premium.webp" alt="კატა" loading="eager" decoding="async" width="390" height="390" />
+          <span class="hero-star one" aria-hidden="true">✳</span>
+          <span class="hero-star two" aria-hidden="true">✦</span>
+          <div class="hero-sticker"><strong>100%</strong><small data-i18n="sticker">სიყვარული</small></div>
+        </div>
+      </section>
+
+      <!-- Branches are no longer chips: each entry shows a photo, address and details. -->
+      <aside class="directory" id="branches" aria-labelledby="branchesTitle">
+        <div class="panel-heading">
+          <div><span class="section-kicker" data-i18n="branchesKicker">გვიპოვეთ ახლოს</span><h2 id="branchesTitle" data-i18n="branchesTitle">ჩვენი ფილიალები</h2></div>
+          <div class="directory-heading-actions"><button type="button" id="directoryMap" class="directory-map" data-i18n-title="viewMap" title="რუკის ნახვა"><img class="ui-icon" src="assets/icons/map.svg" alt="" /><span data-i18n="mapShort">რუკა</span></button><span id="branchCount" class="branch-count">21</span></div>
+        </div>
+        <label class="branch-search"><img src="assets/icons/search.svg" class="ui-icon" alt="" /><input id="branchSearch" type="search" autocomplete="off" data-i18n-placeholder="branchSearch" placeholder="მოძებნეთ უბანი ან მისამართი" aria-label="ფილიალის ძებნა" /></label>
+        <div class="branch-scroll" id="branchList" tabindex="0" aria-label="ფილიალების ჩამონათვალი, შიდა სქროლით"></div>
+        <div class="directory-bottom">
+          <div><span class="section-kicker" data-i18n="socialKicker">ყოველდღე თქვენთან</span><h3 data-i18n="followUs">გამოგვყევით სოციალურ ქსელებში</h3></div>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/zooarea.ge" id="facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" /></a>
+            <a href="https://www.instagram.com/zooarea.ge/" id="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+            <a href="https://www.tiktok.com/@zooarea" id="tiktok" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="assets/icons/tiktok.svg" alt="" /></a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Replaces four demo products with all eleven supplied category photos. -->
+      <section class="products" id="categories" aria-labelledby="categoriesTitle">
+        <div class="panel-heading categories-heading">
+          <div><span class="section-kicker" data-i18n="categoriesKicker">აღმოაჩინეთ ზოოარეა</span><h2 id="categoriesTitle" data-i18n="categoriesTitle">შენი საყვარელი კატეგორიები</h2></div>
+          <div class="carousel-controls">
+            <span class="categories-count" id="categoryCount">11 კატეგორია</span>
+            <button type="button" id="categoryPrev" aria-label="წინა კატეგორიები">←</button>
+            <button type="button" id="categoryNext" aria-label="შემდეგი კატეგორიები">→</button>
+          </div>
+        </div>
+        <div class="category-track" id="categoryTrack" tabindex="0" aria-label="კატეგორიების ჰორიზონტალური სქროლი"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> ZooArea <span data-i18n="copyright">— სიყვარულით შექმნილი ცხოველებისთვის</span></span>
+      <div class="footer-links"><a href="tel:+995591905050" data-i18n="phoneAction">დაგვირეკეთ: 591 90 50 50</a><button type="button" id="footerContact" data-i18n="contact">კონტაქტი ↗</button><span class="footer-paw">✳</span></div>
+    </footer>
+
+    <nav class="mobile-tabs" aria-label="მობილური ნავიგაცია">
+      <button type="button" class="active" data-tab="home"><span aria-hidden="true">⌂</span><small data-i18n="tabHome">მთავარი</small></button>
+      <button type="button" data-tab="categories"><img class="tab-icon" src="assets/icons/grid.svg" alt="" /><small data-i18n="tabCategories">კატეგორიები</small></button>
+      <button type="button" data-tab="branches"><img class="tab-icon" src="assets/icons/map.svg" alt="" /><small data-i18n="tabBranches">ფილიალები</small></button>
+      <button type="button" data-tab="contact"><img class="tab-icon" src="assets/icons/phone.svg" alt="" /><small data-i18n="tabContact">კონტაქტი</small></button>
+    </nav>
+    <section class="mobile-panel" id="mobilePanel" aria-labelledby="mobilePanelTitle" hidden>
+      <div class="mobile-panel-head"><h2 id="mobilePanelTitle"></h2><button type="button" id="closeMobilePanel" aria-label="დახურვა">✕</button></div>
+      <div id="mobilePanelBody" class="mobile-panel-body"></div>
+    </section>
+  </div>
+
+  <!-- Decorative walking mascot: ignores pointer events and honors reduced-motion. -->
+  <div class="mascot-path" aria-hidden="true"><div class="mascot-walker"><svg viewBox="0 0 130 98" aria-hidden="true">
+<ellipse cx="62" cy="91" rx="50" ry="4" fill="#294338" opacity=".16"/>
+<g class="dog-tail"><path d="M32 46 Q6 42 8 21" fill="none" stroke="#c58045" stroke-width="12" stroke-linecap="round"/><path d="M8 21q2-8 11-7" fill="none" stroke="#eaa660" stroke-width="5" stroke-linecap="round"/></g>
+<g class="dog-leg leg-back"><rect x="35" y="67" width="13" height="24" rx="6" fill="#b97b45"/><ellipse cx="40" cy="88" rx="10" ry="5" fill="#a66639"/></g>
+<g class="dog-leg leg-front"><rect x="81" y="68" width="13" height="24" rx="6" fill="#c78d4c"/><ellipse cx="90" cy="89" rx="10" ry="5" fill="#b8763c"/></g>
+<ellipse cx="62" cy="58" rx="41" ry="28" fill="#d79a58"/><ellipse cx="67" cy="60" rx="26" ry="18" fill="#edb577" opacity=".9"/>
+<path d="M86 36 105 21q15-1 20 12l-2 27q-8 19-25 15l-14-13Z" fill="#dfa76a"/>
+<path d="M91 29q-14-15-21-3-2 19 14 24Z" fill="#a36b40"/><path d="M111 26q12-14 18-7 4 12-8 21Z" fill="#a36b40"/>
+<ellipse cx="119" cy="55" rx="12" ry="8" fill="#f2c995"/><circle cx="126" cy="50" r="5" fill="#45362c"/>
+<circle cx="109" cy="39" r="3.6" fill="#342922"/><circle cx="110" cy="38" r="1" fill="white"/>
+<path d="m115 61 3 3 5-3" stroke="#6a4733" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M86 43q9 9 13 21" stroke="#428b75" stroke-width="6" stroke-linecap="round"/><circle cx="96" cy="58" r="6" fill="#f4c75d" stroke="#dbaf35" stroke-width="1.5"/><path d="M94 58h4" stroke="#b18a29" stroke-width="1.5"/>
+<g class="dog-leg leg-back"><path d="M48 74v15" stroke="#c18a4f" stroke-width="11" stroke-linecap="round"/></g>
+<g class="dog-leg leg-front"><path d="M83 75v14" stroke="#dba164" stroke-width="11" stroke-linecap="round"/></g>
+</svg></div></div>
+  <!-- Multiple photos are shown here after they are added to assets/branches/{id}. -->
+  <dialog id="branchDialog" class="branch-dialog" aria-labelledby="dialogTitle">
+    <button type="button" class="dialog-close" id="closeBranchDialog" aria-label="დახურვა">✕</button>
+    <div class="dialog-photo"><img id="dialogImage" alt="ფილიალის ფოტო" /><button type="button" class="gallery-arrow gallery-prev" id="photoPrev" aria-label="წინა ფოტო">‹</button><button type="button" class="gallery-arrow gallery-next" id="photoNext" aria-label="შემდეგი ფოტო">›</button><span id="photoCount"></span></div>
+    <div class="dialog-thumbs" id="dialogThumbs" aria-label="ფილიალის ფოტოგალერეა"></div>
+    <div class="dialog-copy"><span class="section-kicker" data-i18n="branchDetail">ZOOAREA • ფილიალი</span><h2 id="dialogTitle"></h2><p id="dialogAddress"></p><p class="dialog-photo-note" id="photoNotice" hidden></p><div class="dialog-actions"><button type="button" id="toggleInlineMap" class="inline-map-button" aria-expanded="false" aria-controls="dialogMapPanel"><img src="assets/icons/map.svg" class="ui-icon" alt="" /><span data-i18n="mapPreview">რუკის ჩვენება</span></button><a id="dialogMap" href="#" target="_blank" rel="noopener noreferrer" data-i18n="openMap">Google Maps ↗</a><a id="dialogPhone" href="#" data-i18n="callBranch">დარეკვა ↗</a></div><div class="inline-map-panel" id="dialogMapPanel" hidden><iframe id="dialogMapFrame" title="Google Maps — ფილიალის მდებარეობა" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><p data-i18n="mapHint">თუ რუკა არ ჩაიტვირთა, გახსენით Google Maps ბმულით.</p></div><small id="dialogHours">ყოველდღე • 10:00–21:00</small></div>
+  </dialog>
+  <dialog id="categoryDialog" class="category-dialog" aria-labelledby="categoryDialogTitle">
+    <button type="button" id="closeCategoryDialog" class="dialog-close" aria-label="დახურვა">✕</button>
+    <img id="categoryDialogImage" class="category-dialog-image" alt="" loading="lazy" decoding="async" />
+    <div class="category-dialog-copy"><span class="section-kicker" data-i18n="categoriesKicker">აღმოაჩინეთ ზოოარეა</span><h2 id="categoryDialogTitle"></h2><p data-i18n="categoryDescription">შეარჩიეთ პროდუქცია ჩვენს ფილიალებში ან მიტანის პლატფორმებზე.</p><div class="category-dialog-actions"><a id="categoryWoltLink" target="_blank" rel="noopener noreferrer" data-i18n="orderWolt">Wolt-ზე</a><a id="categoryGlovoLink" target="_blank" rel="noopener noreferrer" data-i18n="orderGlovo">Glovo-ზე</a></div></div>
+  </dialog>
+  <dialog id="contactDialog" class="contact-dialog" aria-labelledby="contactTitle">
+    <button type="button" class="dialog-close" id="closeContactDialog" aria-label="დახურვა">✕</button>
+    <span class="section-kicker">ZOOAREA</span><h2 id="contactTitle" data-i18n="contactTitle">დაგვიკავშირდით</h2>
+    <p data-i18n="contactDescription">შეგიძლიათ დაგვიკავშირდეთ, მოგვწეროთ ან შეუკვეთოთ სასურველი პროდუქტები.</p>
+    <div class="contact-hours"><img class="ui-icon" src="assets/icons/clock.svg" alt="" /><span data-i18n="contactHours">ფილიალების სამუშაო საათები: ყოველდღე 10:00–21:00</span></div>
+    <div id="contactLinks" class="contact-links"></div>
+  </dialog>
+</body>
+</html>
