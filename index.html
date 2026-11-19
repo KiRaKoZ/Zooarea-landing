@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Georgian:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <!-- Prioritize above-the-fold images. Other photos load only when visible. -->
   <link rel="preload" href="assets/categories/dog-premium.webp" as="image" type="image/webp" fetchpriority="high" />
-  <link rel="preload" href="assets/brand/logo-transparent.webp" as="image" type="image/webp" />
+  <link rel="preload" href="assets/brand/transperent-logo.png" as="image" type="image/webp" />
   <link rel="stylesheet" href="assets/css/global.css" />
   <script src="assets/js/data.js" defer></script>
   <script src="assets/js/branch-photos.js" defer></script>
@@ -20,14 +20,14 @@
 </head>
 <body>
   <div class="preloader" id="preloader" role="status" aria-label="ZooArea იტვირთება">
-    <div class="preloader-card"><img src="assets/brand/logo-transparent.webp" width="75" height="75" alt="" /><strong>zoo<span>area</span></strong><small data-i18n="loading">ბედნიერი თათები უკვე მოდიან...</small><div class="loading-track"><div class="loading-progress"></div></div></div>
+    <div class="preloader-card"><img src="assets/brand/transperent-logo.png" width="75" height="75" alt="" /><strong>zoo<span>area</span></strong><small data-i18n="loading">ბედნიერი თათები უკვე მოდიან...</small><div class="loading-track"><div class="loading-progress"></div></div></div>
   </div>
   <div class="page-shell" id="home">
     <!-- Header: old layout, genuine brand logo and preserved KA/EN/RU switcher. -->
     <header class="header">
       <a class="brand" href="#home" aria-label="ZooArea — მთავარი">
-        <img class="brand-image" src="assets/brand/logo-transparent.webp" alt="ZooArea ლოგო" width="59" height="59" decoding="async" fetchpriority="high" />
-        <span class="brand-name"><strong>zoo<span>area</span></strong><small>PET CARE & MORE</small></span>
+        <img class="brand-image" src="assets/brand/transperent-logo.png" alt="ZooArea ლოგო" width="59" height="59" decoding="async" fetchpriority="high" />
+        <span class="brand-name"><strong>Zoo<span>Area</span></strong></span>
       </a>
       <p class="header-caption" data-i18n="headerCaption">ყველაფერი ბედნიერი თათებისთვის</p>
       <div class="header-actions">
@@ -52,17 +52,17 @@
       <!-- Preserves the original old site's left hero / right branches composition. -->
       <section class="hero" aria-labelledby="heroTitle">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="eyebrow-symbol">✳</span><span data-i18n="eyebrow">სიყვარულით თქვენს მეგობრებზე</span></div>
+          <div class="eyebrow"><span class="eyebrow-symbol">✳</span><span data-i18n="eyebrow">მხოლოდ ხარისხიანი და სანდო პროდუქტები </span></div>
           <h1 id="heroTitle" data-i18n-html="heroTitle">პატარა თათებს <em>დიდი სიყვარული</em> სჭირდება.</h1>
           <p class="lead" data-i18n="heroDescription">ჩვენთან იპოვით საკვებს, სათამაშოებსა და ყველაფერს თქვენი ოთხფეხა მეგობრისთვის. შეუკვეთეთ ახლავე ან გვესტუმრეთ ფილიალში.</p>
           <div class="delivery">
             <a class="cta cta-wolt" id="woltHero" href="https://wolt.com/ka/geo/tbilisi/brand/zooarea" target="_blank" rel="noopener noreferrer">
               <img class="wolt-logo" src="assets/icons/wolt.svg" alt="Wolt" loading="lazy" />
-              <span data-i18n="woltOrder">შეკვეთა Wolt-ზე</span><span aria-hidden="true">↗</span>
+              <span data-i18n="woltOrder">შეკვეთა Wolt-ზე</span>
             </a>
             <a class="cta cta-glovo" id="glovoHero" href="https://glovoapp.com/ka/ge/tbilisi/stores/zooarea-tbi" target="_blank" rel="noopener noreferrer">
               <img class="glovo-logo" src="assets/icons/glovo.svg" alt="Glovo" loading="lazy" />
-              <span data-i18n="glovoOrder">შეკვეთა Glovo-ზე</span><span aria-hidden="true">↗</span>
+              <span data-i18n="glovoOrder">შეკვეთა Glovo-ზე</span>
             </a>
           </div>
           <div class="hero-note"><span aria-hidden="true">♥</span><span data-i18n="heroNote">ძაღლებისთვის, კატებისთვის და ყველა პატარა მეგობრისთვის</span></div>
@@ -73,14 +73,14 @@
           <img class="hero-cat" src="assets/categories/cat-premium.webp" alt="კატა" loading="eager" decoding="async" width="390" height="390" />
           <span class="hero-star one" aria-hidden="true">✳</span>
           <span class="hero-star two" aria-hidden="true">✦</span>
-          <div class="hero-sticker"><strong>100%</strong><small data-i18n="sticker">სიყვარული</small></div>
+          <div class="hero-sticker"><strong>100%</strong><small data-i18n="sticker">ხარისხი</small></div>
         </div>
       </section>
 
       <!-- Branches are no longer chips: each entry shows a photo, address and details. -->
       <aside class="directory" id="branches" aria-labelledby="branchesTitle">
         <div class="panel-heading">
-          <div><span class="section-kicker" data-i18n="branchesKicker">გვიპოვეთ ახლოს</span><h2 id="branchesTitle" data-i18n="branchesTitle">ჩვენი ფილიალები</h2></div>
+          <div><h2 id="branchesTitle" data-i18n="branchesTitle">ჩვენი ფილიალები</h2></div>
           <div class="directory-heading-actions"><button type="button" id="directoryMap" class="directory-map" data-i18n-title="viewMap" title="რუკის ნახვა"><img class="ui-icon" src="assets/icons/map.svg" alt="" /><span data-i18n="mapShort">რუკა</span></button><span id="branchCount" class="branch-count">21</span></div>
         </div>
         <label class="branch-search"><img src="assets/icons/search.svg" class="ui-icon" alt="" /><input id="branchSearch" type="search" autocomplete="off" data-i18n-placeholder="branchSearch" placeholder="მოძებნეთ უბანი ან მისამართი" aria-label="ფილიალის ძებნა" /></label>
@@ -115,13 +115,13 @@
     </footer>
 
     <nav class="mobile-tabs" aria-label="მობილური ნავიგაცია">
-      <button type="button" class="active" data-tab="home"><span aria-hidden="true">⌂</span><small data-i18n="tabHome">მთავარი</small></button>
-      <button type="button" data-tab="categories"><img class="tab-icon" src="assets/icons/grid.svg" alt="" /><small data-i18n="tabCategories">კატეგორიები</small></button>
+      <button type="button"  data-tab="home" class="active" ><img class="tab-icon" src="assets/icons/home.svg" alt="" /><small data-i18n="tabHome">მთავარი</small></button>
+      <button type="button" data-tab="categories"><img class="tab-icon" src="assets/icons/category.svg" alt="" /><small data-i18n="tabCategories">კატეგორიები</small></button>
       <button type="button" data-tab="branches"><img class="tab-icon" src="assets/icons/map.svg" alt="" /><small data-i18n="tabBranches">ფილიალები</small></button>
       <button type="button" data-tab="contact"><img class="tab-icon" src="assets/icons/phone.svg" alt="" /><small data-i18n="tabContact">კონტაქტი</small></button>
     </nav>
     <section class="mobile-panel" id="mobilePanel" aria-labelledby="mobilePanelTitle" hidden>
-      <div class="mobile-panel-head"><h2 id="mobilePanelTitle"></h2><button type="button" id="closeMobilePanel" aria-label="დახურვა">✕</button></div>
+      <div class="mobile-panel-head"><h2 id="mobilePanelTitle"></h2></div>
       <div id="mobilePanelBody" class="mobile-panel-body"></div>
     </section>
   </div>

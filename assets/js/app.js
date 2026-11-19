@@ -26,14 +26,13 @@
       headerCaption: 'ყველაფერი ბედნიერი თათებისთვის',
       announcement: 'ჩვენი ახალი ვებსაიტი მზადდება!',
       announcementDetail: 'სულ მალე აქ ონლაინ შოპინგიც დაგხვდებათ',
-      eyebrow: 'სიყვარულით თქვენს მეგობრებზე',
+      eyebrow: 'მხოლოდ ხარისხიანი და სანდო პროდუქტები',
       heroTitle: 'პატარა თათებს <em>დიდი სიყვარული</em> სჭირდება.',
       heroDescription: 'ჩვენთან იპოვით საკვებს, სათამაშოებსა და ყველაფერს თქვენი ოთხფეხა მეგობრისთვის. შეუკვეთეთ ახლავე ან გვესტუმრეთ ფილიალში.',
       woltOrder: 'შეკვეთა Wolt-ზე',
       glovoOrder: 'შეკვეთა Glovo-ზე',
       heroNote: 'ძაღლებისთვის, კატებისთვის და ყველა პატარა მეგობრისთვის',
-      sticker: 'სიყვარული',
-      branchesKicker: 'გვიპოვეთ ახლოს',
+      sticker: 'ხარისხი',
       branchesTitle: 'ჩვენი ფილიალები',
       branchSearch: 'მოძებნეთ უბანი ან მისამართი',
       socialKicker: 'ყოველდღე თქვენთან',
@@ -79,14 +78,13 @@
       headerCaption: 'Everything for happy paws',
       announcement: 'Our new website is in the works!',
       announcementDetail: 'Online shopping will be available here soon',
-      eyebrow: 'Made with love for your friends',
+      eyebrow: 'Only quality and trusted products',
       heroTitle: 'Little paws deserve <em>big love.</em>',
       heroDescription: 'Find pet food, toys and essentials at ZooArea. Order online today or visit one of our stores.',
       woltOrder: 'Order on Wolt',
       glovoOrder: 'Order on Glovo',
       heroNote: 'For dogs, cats and every small companion',
-      sticker: 'LOVE',
-      branchesKicker: 'FIND US NEAR YOU',
+      sticker: 'QUALITY',
       branchesTitle: 'Our locations',
       branchSearch: 'Search neighborhood or address',
       socialKicker: 'STAY CONNECTED',
@@ -132,14 +130,13 @@
       headerCaption: 'Всё для счастливых лапок',
       announcement: 'Наш новый сайт скоро откроется!',
       announcementDetail: 'Скоро здесь появятся онлайн-покупки',
-      eyebrow: 'С любовью к вашим питомцам',
+      eyebrow: 'Только качество и проверенные продукты',
       heroTitle: 'Маленьким лапкам нужна <em>большая любовь.</em>',
       heroDescription: 'В ZooArea есть корм, игрушки и всё необходимое для питомцев. Заказывайте онлайн или приходите в магазин.',
       woltOrder: 'Заказать в Wolt',
       glovoOrder: 'Заказать в Glovo',
       heroNote: 'Для собак, кошек и всех маленьких друзей',
-      sticker: 'ЛЮБОВЬ',
-      branchesKicker: 'МЫ РЯДОМ',
+      sticker: 'КАЧЕСТВО',
       branchesTitle: 'Наши магазины',
       branchSearch: 'Поиск по району или адресу',
       socialKicker: 'МЫ НА СВЯЗИ',
@@ -537,7 +534,6 @@
   $('#branchDialog').addEventListener('close', resetInlineMap);
   $('#closeCategoryDialog').addEventListener('click', () => $('#categoryDialog').close());
   $('#categoryDialog').addEventListener('close', () => state.returnFocus?.focus());
-  $('#closeMobilePanel').addEventListener('click', () => selectMobileTab('home'));
   $('#footerContact').addEventListener('click', () => $('#contactDialog').showModal());
   $('#closeContactDialog').addEventListener('click', () => $('#contactDialog').close());
   $('#closeBranchDialog').addEventListener('click', () => $('#branchDialog').close());
